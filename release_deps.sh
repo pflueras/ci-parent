@@ -19,9 +19,9 @@ git commit -m "Release of version $VERSION"
 git tag "$VERSION" -m "Release version $VERSION"
 
 # New version
-MAJOR=$(echo $1 | cut -f 1 -d '.')
-MINOR=$(echo $1 | cut -f 2 -d '.')
-PATCH=$(echo $1 | cut -f 3 -d '.')
+MAJOR=$(echo $VERSION | cut -f 1 -d '.')
+MINOR=$(echo $VERSION | cut -f 2 -d '.')
+PATCH=$(echo $VERSION | cut -f 3 -d '.')
 NEW_VERSION=$MAJOR.$MINOR.$(($PATCH + 1))-SNAPSHOT
 echo 'New version:' $NEW_VERSION
 
