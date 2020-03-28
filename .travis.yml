@@ -1,0 +1,8 @@
+language: java
+dist: trusty
+
+deploy:
+  provider: script
+  script: release_deps.sh
+  on:
+    branch: master
