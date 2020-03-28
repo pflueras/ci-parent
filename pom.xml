@@ -3,7 +3,7 @@
 
     <groupId>org.examples</groupId>
     <artifactId>ci-parent</artifactId>
-    <version>0.9.11-SNAPSHOT</version>
+    <version>0.9.12</version>
     <packaging>pom</packaging>
     <name>CI Parent</name>
 </project>
