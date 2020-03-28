@@ -3,6 +3,8 @@ dist: trusty
 
 deploy:
   provider: script
-  script: release_deps.sh
+  script:
+    - chmod u+x release_deps.sh
+      release_deps.sh
   on:
     branch: master
