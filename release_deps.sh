@@ -31,7 +31,7 @@ mvn versions:use-dep-version -Dincludes=org.examples -DdepVersion=$NEW_VERSION -
 git add pom.xml
 git commit -m "Next development version $NEW_VERSION"
 
-#git push --follow-tags
+git push --follow-tags
 
 # Clean up
 cd $TRAVIS_BUILD_DIR
