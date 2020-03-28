@@ -1,11 +1,12 @@
 language: java
 dist: trusty
 
+before_deploy:
+  chmod u+x release_deps.sh
+
 deploy:
   provider: script
   skip_cleanup: true
-  script:
-    - chmod u+x release_deps.sh
-    - ./release_deps.sh
+  script: release_deps.sh
   on:
     branch: master
