@@ -2,11 +2,11 @@ language: java
 dist: trusty
 
 before_deploy:
-  chmod u+x release_deps.sh
+  chmod u+x .travis/release_deps.sh
 
 deploy:
   provider: script
   skip_cleanup: true
-  script: ./release_deps.sh
+  script: .travis/release_deps.sh
   on:
     tags: true

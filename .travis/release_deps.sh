@@ -1,5 +1,6 @@
 #!/bin/sh
 
+# Params: 1) downstream module name, 2) Release version, 3) Next development version
 release_dependency()
 {
     echo "Releasing dependency version $2 of $1. Next development version $3"
